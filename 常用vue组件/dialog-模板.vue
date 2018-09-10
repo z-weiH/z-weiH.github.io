@@ -67,7 +67,7 @@
 
     },
     methods : {
-      show(data,type) {
+      show(type,data) {
 				this.dialogVisible = true;
 				// dialog 返回顶部
         this.$nextTick(() => {
