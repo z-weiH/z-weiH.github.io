@@ -94,7 +94,9 @@
 						this.$http({
               method : 'post',
               url : '/preCaseLib/distributeCaseByDistributeCaseQuery.htm',
-              data : data,
+              data : {
+                
+              },
             }).then((res) => {
               this.$message.success('分配成功');
             }).catch(() => {
