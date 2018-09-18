@@ -73,6 +73,10 @@
         this.$nextTick(() => {
           this.$refs.dialog.$el.scrollTop = 0;
         });
+
+        this.$nextTick(() => {
+          // 处理逻辑 写在nextTick中 ， 防止dialog没有加载数据问题
+        });
       },
 
       // 关闭浮层
