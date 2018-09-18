@@ -88,7 +88,10 @@
 				pageSize : 10,
 				
 			}
-		},
+    },
+    mounted() {
+      this.initTableList();
+    },
 		methods : {
 			// 点击搜索
 			handleSearch() {
