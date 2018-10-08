@@ -82,12 +82,15 @@
       // 关闭浮层
       handleClose() {
         this.dialogVisible = false;
-        // 取消按钮禁用
+        
         setTimeout(() => {
+          // 取消按钮禁用
           this.submitDisabled = false;
+          // 重置表单数据
+          this.$refs.ruleForm.resetFields();
+          this.$refs.ruleForm.clearValidate();
 				},500);
-				// 重置表单数据
-        this.$refs.ruleForm.resetFields();
+				
       },
       // 点击提交
       handleSubmit(submitType) {
