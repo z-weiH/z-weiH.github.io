@@ -3,7 +3,7 @@
   <el-upload v-bind="$attrs" v-on="$listeners">
     <!-- 默认插槽 -->
     <slot></slot>
-    <!-- 其他插槽 -->
+    <!-- 其他任意插槽 例如：trigger,tip -->
     <template v-if="key !== 'default'" :slot="key" v-for="(item,key) in $slots">
       <slot :name="key"></slot>
     </template>
