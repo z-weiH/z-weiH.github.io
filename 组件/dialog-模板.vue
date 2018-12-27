@@ -88,7 +88,9 @@
           this.submitDisabled = false;
           // 重置表单数据
           this.$refs.ruleForm.resetFields();
-          this.$refs.ruleForm.clearValidate();
+          this.$nextTick(() => {
+            this.$refs.ruleForm.clearValidate();
+          });
 				},500);
 				
       },
