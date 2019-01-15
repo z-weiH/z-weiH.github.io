@@ -103,7 +103,7 @@
 
       // 初始化 表格数据
       initTableList() {
-        this.$http({
+        return this.$http({
           url : '/preCaseLib/queryCaseListByCondition.htm',
           method : 'post',
           data : {
