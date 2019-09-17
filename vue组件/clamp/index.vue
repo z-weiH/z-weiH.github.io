@@ -1,5 +1,5 @@
 <template>
-  <div class="clamp-wrap" ref="content">
+  <div class="clamp-wrap" ref="content" :style="{'line-height' : lineHeight}">
     {{text}}
   </div>
 </template>
@@ -16,6 +16,10 @@
       truncationHTML : {
         type : String,
         default : '<span class="clamp-spot">...</span>查看更多',
+      },
+      lineHeight: {
+        type: Number,
+        default: 1,
       },
     },
     data() {

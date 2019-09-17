@@ -2,7 +2,7 @@
 require('./index.css');
 exports.__esModule = true;
 
-var _dom = require('element-ui/lib/utils/dom');
+var _dom = require('./dom');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
